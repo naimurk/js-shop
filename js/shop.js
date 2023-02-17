@@ -57,6 +57,20 @@ document.getElementById('btn-four').addEventListener('click',
 
 })
 
+// card 5
+document.getElementById('btn-five').addEventListener('click', 
+function(){
+    const productName = document.getElementById('five-text').innerText
+    const productPrice = document.getElementById('five-price').value
+    const productQuantity = document.getElementById('five-quantity').value
+    
+    const sum = parseInt(productPrice) / parseInt(productQuantity);
+    TableDisplay(productName, productPrice, productQuantity, sum)
+    sl += 1
+    disabledButton('btn-five')
+    
+})
+
 
 
 
